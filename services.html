@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Acme Web Design | Services</title>
+  <link rel="stylesheet" href="style/styles.css">
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body>
+
+  <header>
+    <div class="wrapper">
+      <h1 ><a href="./index.html"><span>Acme</span> Web Design</a></h1>
+      <nav>
+        <a href="./index.html" >Home</a>
+        <a href="./services.html" class="active">Services</a>
+        <a href="./about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="sub">
+    <div class="wrapper">
+      <p>Subscribe To Our Newsletter</p>
+      <form>
+        <input type="text" placeholder="Enter email.." name="email-in" onkeydown="handleEnter(event)">
+        <button type="button" onclick="subscribe()">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrapper">
+      <div class="services">
+        <h2>Services</h2>
+        <div class="service">
+          <h3>Website Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit debitis similique ullam incidunt iure, natus pariatur praesentium repellat. Cupiditate, sint?</p><br>
+          <p>Pricing: $1,000 - $3,000</p>
+        </div>
+        <div class="service">
+          <h3>Website Maintenance</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit debitis similique ullam incidunt iure, natus pariatur praesentium repellat. Cupiditate, sint?</p><br>
+          <p>Pricing: $250 per month</p>
+        </div>
+        <div class="service">
+          <h3>Website Hosting</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit debitis similique ullam incidunt iure, natus pariatur praesentium repellat. Cupiditate, sint?</p><br>
+          <p>Pricing: $25 per month</p>
+        </div>
+      </div>
+      <div class="contact">
+        <h2>Get A Quote</h2>
+        <form>
+          <label>Name</label>
+          <input type="text" placeholder="Name" name="" value="">
+          <label>Email</label>
+          <input type="text" placeholder="Email Address" name="" value="">
+          <label>Message</label>
+          <input type="text" placeholder="Message" name="" value="" class="message">
+          <a href="#">Send</a>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <p><span>Acme</span> Web Design. Copyrights &copy; 2018</p>
+    </div>
+  </footer>
+
+  <div name="pop-up" class="sub-confirm hide">
+    <div class="exit" onclick="subscribeClose()"><a>&#9746;</a></div>
+    <h2>Thanks for Subscribing!</h2>
+    <p>Your email: <span name="email-out"></span> is now part of our community</p>
+  </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

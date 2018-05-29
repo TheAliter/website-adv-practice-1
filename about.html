@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <title>Acme Web Design | About</title>
+  <link rel="stylesheet" href="style/styles.css">
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body>
+
+  <header>
+    <div class="wrapper">
+      <h1 ><a href="./index.html"><span>Acme</span> Web Design</a></h1>
+      <nav>
+        <a href="./index.html" >Home</a>
+        <a href="./services.html">Services</a>
+        <a href="./about.html" class="active">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="sub">
+    <div class="wrapper">
+      <p>Subscribe To Our Newsletter</p>
+      <form>
+        <input type="text" placeholder="Enter email.." name="email-in" onkeydown="handleEnter(event)">
+        <button type="button" onclick="subscribe()">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="about-us">
+    <a href="#" id="expand">Show More</a>
+    <div class="wrapper">
+      <article>
+        <h2>About Us</h2>
+        <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere distinctio odio beatae, repudiandae sint libero, itaque impedit nostrum cupiditate, ipsa cum eum officiis numquam vel optio? Ipsum voluptatibus nemo enim libero dolorem repellat error sapiente natus, laborum accusamus eum, harum nesciunt laudantium, velit temporibus quod, tempora. Sequi eligendi rerum quam, harum suscipit qui cupiditate dicta voluptate iste inventore sed quisquam eum iure maxime unde voluptates, asperiores explicabo. Fugiat in, tempora pariatur asperiores beatae obcaecati, consectetur quos necessitatibus. Officia ullam, laborum ab. Hic eius obcaecati unde beatae dolore iure, molestias dicta voluptates maxime ex! Nesciunt recusandae consequatur et in minus explicabo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos amet consectetur, neque atque. A deserunt eligendi animi cumque excepturi laborum neque aspernatur, laudantium magnam eaque, ipsa odio saepe! Beatae, expedita soluta. Ut, dolores, ullam, voluptatem, molestiae illo natus odit consequuntur accusantium incidunt distinctio eum tempore. Voluptate perspiciatis quibusdam, consequatur accusamus sapiente. Praesentium assumenda, adipisci eos aspernatur laborum voluptate labore, cum soluta similique facere consectetur, atque harum recusandae! Consequatur voluptatibus, optio molestiae vero culpa a quam accusamus facilis delectus pariatur ex! Unde placeat magnam ea facilis voluptatibus, modi, vitae officia soluta! Molestiae, veniam tenetur cumque aliquam obcaecati consequatur! Voluptatibus fuga a enim qui, cum at doloremque rerum quibusdam omnis quod temporibus ducimus voluptate voluptates. Neque aperiam, voluptatum veritatis aliquam cum dignissimos officia fugit non corrupti, exercitationem et voluptate dolorum aspernatur, ex optio, ipsum ullam sapiente explicabo beatae aliquid tenetur. Adipisci, nihil. Officiis non, libero possimus itaque magnam rerum veniam, eligendi nesciunt.</p>
+      </article>
+      <aside>
+        <h2>What We Do</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ipsum blanditiis assumenda incidunt, quam consequatur molestias, eos quia, mollitia dignissimos explicabo perferendis, similique odit ipsa adipisci? Eligendi natus, distinctio in!</p>
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <p><span>Acme</span> Web Design. Copyrights &copy; 2018</p>
+    </div>
+  </footer>
+
+  <div name="pop-up" class="sub-confirm hide">
+    <div class="exit" onclick="unsubscribeClose()"><a>&#9746;</a></div>
+    <h2>Thanks for Subscribing!</h2>
+    <p>Your email: <span name="email-out"></span> is now part of our community</p>
+  </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
